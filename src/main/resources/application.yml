@@ -1,0 +1,20 @@
+server:
+  port: 8082
+spring:
+#  application:
+#    name: order
+  profiles:
+    active: dev
+  #  cloud:
+  #     config:
+  #        uri: http://localhost:8888
+  datasource:
+    url: jdbc:mysql://localhost:3306/tramhuong
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL55Dialect
